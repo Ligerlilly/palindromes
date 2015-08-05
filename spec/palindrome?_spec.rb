@@ -9,4 +9,8 @@ describe 'palindrome?' do
   it 'returns false if input string is not a palindrome' do
     expect(palindrome?('rock')).to eq(false)
   end
+
+  it 'returns true if input fixnum is palindrome' do
+    expect(palindrome?(202)).to eq(true)
+  end
 end
