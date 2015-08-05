@@ -13,4 +13,8 @@ describe 'palindrome?' do
   it 'returns true if input fixnum is palindrome' do
     expect(palindrome?(202)).to eq(true)
   end
+
+  it 'returns false if input fixnum is not a palindrome' do
+    expect(palindrome?(34)).to eq(false)
+  end
 end
