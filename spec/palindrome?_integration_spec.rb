@@ -8,6 +8,6 @@ describe 'the palindrome path', {:type => :feature} do
     visit '/'
     fill_in('word', :with => 'noon')
     click_button('Send')
-    expect(page).to have_content("It is a palindrome!")
+    expect(page).to have_content("noon is a palindrome!")
   end
 end
